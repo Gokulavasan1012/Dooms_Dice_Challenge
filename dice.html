@@ -1,0 +1,22 @@
+<center><h1>Dice Challenge</h1></center><br>
+<form method="GET" action="possible_combination">
+    <p>Click here to see the total Possible Combination: </p>
+    <input type="submit" value="Total Combinations"/>
+    <br>
+</form>
+<form method="GET" action="possible_distribution">
+    <p>click here to see the Possible Distributions: </p>
+    <input type="submit" value="Possible Distributions">
+</form>
+<form method="GET" action="possible_probability">
+    <p>click here to see the Possible Probability: </p>
+    <input type="submit" value="Possible Probability">
+</form>
+<form method="POST" action="doom_dice_challenge">
+    {% csrf_token %}
+    <p>Dice_1:</p>
+    <input type="text" name="dice1"><br>
+    <p>Dice_2:</p>
+    <input type="text" name="dice2"><br>
+    <input type="submit" value="doom dice challenge">
+</form>
